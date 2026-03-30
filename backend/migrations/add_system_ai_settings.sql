@@ -1,0 +1,5 @@
+ALTER TABLE os_system_setting
+ADD COLUMN ai_provider VARCHAR(32) NOT NULL DEFAULT 'openai',
+ADD COLUMN ai_api_key VARCHAR(255) NULL,
+ADD COLUMN ai_api_base VARCHAR(255) NULL,
+ADD COLUMN ai_chat_model VARCHAR(120) NULL;

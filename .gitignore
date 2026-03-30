@@ -1,0 +1,42 @@
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+.coverage
+coverage.xml
+htmlcov/
+
+# Node / Nuxt
+node_modules/
+.nuxt/
+.output/
+.nitro/
+dist/
+
+# Env files
+.env
+.env.*
+backend/.env
+frontend/.env
+!backend/.env.example
+!frontend/.env.example
+
+# Logs
+*.log
+
+# Runtime data
+backend/storage/uploads/
+backend/storage/runtime/
+backend/storage/models/

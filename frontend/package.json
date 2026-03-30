@@ -1,0 +1,32 @@
+{
+  "name": "omnisell-frontend",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#internal/nuxt/paths": "./internal/nuxt-paths.mjs"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^10.2.4",
+    "@vueuse/core": "^14.2.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^1.0.0",
+    "nuxt": "^3.12.4",
+    "reka-ui": "^2.9.2",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/node": "^25.5.0",
+    "sass": "^1.98.0",
+    "shadcn-nuxt": "^2.2.0",
+    "tailwindcss": "^4.1.13"
+  }
+}
