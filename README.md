@@ -37,6 +37,36 @@ omniSell/
 - 后端启动时会自动尝试创建数据库和初始化表
 - 如果使用本地 `faster-whisper`，首次运行会自动下载模型到 `backend/storage/models`
 
+### 1.1 安装 `yt-dlp`
+
+项目里视频下载依赖系统里的 `yt-dlp` 可执行文件，后端默认读取的是：
+
+```env
+YT_DLP_BINARY=yt-dlp
+```
+
+常见安装方式：
+
+macOS（Homebrew）：
+
+```bash
+brew install yt-dlp
+```
+
+或使用 Python 安装：
+
+```bash
+python3 -m pip install -U yt-dlp
+```
+
+安装完成后可以检查一下：
+
+```bash
+yt-dlp --version
+```
+
+如果你是用 `pip` 装的，但终端里找不到 `yt-dlp` 命令，需要把 Python 的 scripts/bin 目录加入 `PATH`，或者把 `backend/.env` 里的 `YT_DLP_BINARY` 改成实际可执行文件路径。
+
 ### 2. 后端 Python 依赖
 
 后端依赖已经写在下面两个文件里：
